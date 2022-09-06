@@ -1,0 +1,22 @@
+@import "../../styles/color.scss";
+
+.container-card-profile {
+  border-bottom: 1px solid $black-color;
+  width: 100%;
+  padding: 25px 0px;
+
+  .card-profile {
+    border: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+
+    .image-card-profile {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 1px solid $black-color;
+    }
+  }
+}
