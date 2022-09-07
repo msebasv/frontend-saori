@@ -1,5 +1,6 @@
 import React from "react";
 
+import Sidebar from "../components/Sidebar";
 import { Outlet } from "react-router-dom";
 
 import "./index.scss";
@@ -8,7 +9,7 @@ const Layout = () => {
   return (
     <div className="container-layout">
       <aside className="aside-sidebar">
-        <h2>Sidebar</h2>
+        <Sidebar />
       </aside>
       <div className="container-nav-section">
         <header className="header-navbar">

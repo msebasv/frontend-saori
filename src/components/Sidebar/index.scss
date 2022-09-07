@@ -1,0 +1,21 @@
+@import "../../styles/color.scss";
+
+.container-nav {
+  color: $black-color !important;
+  font-size: 14px;
+
+  .active {
+    background-color: $gray-color;
+    color: $gray-dark-color;
+    font-weight: 500;
+  }
+  a {
+    color: $black-color;
+    padding: 25px 10px;
+    border-bottom: 1px solid $black-color;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
