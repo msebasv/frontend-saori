@@ -9,7 +9,7 @@ const CardProfile = () => {
     <div className="container-card-profile">
       <Card className="card-profile">
         <Card.Img src={profileImage} className="image-card-profile"></Card.Img>
-        <Card.Body>
+        <Card.Body className="card-body-profile">
           <Card.Title>Dr. Persona</Card.Title>
           <Card.Text>123456 </Card.Text>
         </Card.Body>

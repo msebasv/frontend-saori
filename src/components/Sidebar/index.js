@@ -12,14 +12,14 @@ const Sidebar = () => {
   return (
     <div>
       <CardProfile />
-      <Nav defaultActiveKey="/patients" className="flex-column container-nav">
-        <Nav.Link as={Link} to="/patients">
+      <Nav className="flex-column container-nav">
+        <Nav.Link as={Link} eventKey="/patients" to="/patients">
           Pacientes
         </Nav.Link>
-        <Nav.Link as={Link} to="/management">
+        <Nav.Link as={Link} eventKey="/management" to="/management">
           Administración
         </Nav.Link>
-        <Nav.Link as={Link} to="rips">
+        <Nav.Link as={Link} eventKey="/rips" to="rips">
           Rips
         </Nav.Link>
       </Nav>
