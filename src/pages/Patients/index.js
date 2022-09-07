@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Form, Button } from "react-bootstrap";
 import { AiOutlineSearch } from "react-icons/ai";
 
+import ModalGeneric from "../../components/ModalGeneric";
+import FormNewPatient from "../../components/FormNewPatient";
 import TablePatients from "../../components/TablePatients";
 
 import "./index.scss";
 
 const Patients = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <div className="container-patients">
       <div className="container-section-search-new">
@@ -23,11 +30,14 @@ const Patients = () => {
         <Form.Group className="button-new-patiente-container">
           <Button
             variant="secondary"
-            type="submit"
             className="button-new-patient"
+            onClick={handleShow}
           >
             Nuevo Paciente
           </Button>
+          <ModalGeneric show={show} onHide={handleClose}>
+            <FormNewPatient />
+          </ModalGeneric>
         </Form.Group>
       </div>
       <div className="container-section-table-patients">
