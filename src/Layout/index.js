@@ -13,7 +13,7 @@ const Layout = () => {
       </aside>
       <div className="container-nav-section">
         <header className="header-navbar">
-          <h2>Navbar</h2>
+          <h5>Empresa</h5>
         </header>
         <section className="section-content">
           <Outlet />
