@@ -9,3 +9,4 @@ Node 16.15.1
 react-router-dom: 6.3.0
 sass: 1.54.8
 react-bootstrap: 2.5.0
+react-icons: 4.4.0
