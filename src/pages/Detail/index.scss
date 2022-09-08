@@ -1,0 +1,30 @@
+@import "../../styles/color.scss";
+
+.container-detail {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  height: 100%;
+
+  .text-allergy {
+    color: $red-color;
+  }
+  .tab-detail {
+    margin-bottom: 0px !important;
+    .nav-link {
+      color: $black-color;
+      border: 1px solid $black-color;
+
+      &:focus {
+        color: $black-color;
+        background-color: $gray-color;
+      }
+    }
+  }
+  .tab-content {
+    height: 100%;
+    border-left: 1px solid $black-color;
+    border-right: 1px solid $black-color;
+    border-bottom: 1px solid $black-color;
+  }
+}

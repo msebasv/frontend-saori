@@ -4,11 +4,11 @@ import { Modal, Button } from "react-bootstrap";
 
 import "./index.scss";
 
-const ModalGeneric = ({ children, show, onHide }) => {
+const ModalGeneric = ({ children, show, onHide, title }) => {
   return (
     <Modal show={show} onHide={onHide} backdrop="static" fullscreen={true}>
       <Modal.Header closeButton>
-        <Modal.Title>Nuevo Paciente</Modal.Title>
+        <Modal.Title>{title}</Modal.Title>
       </Modal.Header>
       <Modal.Body>{children}</Modal.Body>
     </Modal>

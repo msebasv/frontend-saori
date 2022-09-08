@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
 import { Table } from "react-bootstrap";
 
 import "./index.scss";
@@ -19,7 +20,9 @@ const TablePatients = () => {
           <tr>
             <td>Ada Lovelace</td>
             <td>123456789</td>
-            <td>Ver</td>
+            <td>
+              <Link to="detail">Ver</Link>
+            </td>
           </tr>
           <tr>
             <td>Grace Hopper</td>

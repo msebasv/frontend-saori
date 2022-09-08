@@ -1,0 +1,15 @@
+@import "../../styles/color.scss";
+
+.container-table-anamnesis {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+
+  th {
+    background-color: $gray-color;
+  }
+
+  td {
+    background-color: $white-color;
+  }
+}

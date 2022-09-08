@@ -1,0 +1,15 @@
+@import "../../styles/color.scss";
+.container-tab-anamnesis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .button-new-anamnesis {
+    font-size: 14px;
+    background-color: $gray-color;
+    border: 1px solid $black-color;
+    color: $black-color;
+    padding: 5px 40px;
+  }
+}

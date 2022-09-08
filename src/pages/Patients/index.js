@@ -35,7 +35,7 @@ const Patients = () => {
           >
             Nuevo Paciente
           </Button>
-          <ModalGeneric show={show} onHide={handleClose}>
+          <ModalGeneric show={show} onHide={handleClose} title="Nuevo Paciente">
             <FormNewPatient />
           </ModalGeneric>
         </Form.Group>
