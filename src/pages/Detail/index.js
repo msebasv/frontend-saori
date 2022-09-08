@@ -10,7 +10,7 @@ import "./index.scss";
 const Detail = () => {
   return (
     <div className="container-detail">
-      <h2 className="text-allergy">ALERGICO: LATEX</h2>
+      <h2 className="text-allergy">ALÉRGICO: LATEX</h2>
       <Tabs
         defaultActiveKey="information"
         id="tab-detail"

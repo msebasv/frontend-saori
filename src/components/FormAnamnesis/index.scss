@@ -1,3 +1,51 @@
+@import "../../styles/color.scss";
 textarea {
   resize: none;
+  font-size: 14px !important;
+  border: 1px solid $black-color !important;
+}
+
+select {
+  border: 1px solid $black-color !important;
+  font-size: 14px !important;
+}
+
+label {
+  margin-bottom: 5px !important;
+  margin-top: 5px;
+}
+
+.form-anamnesis {
+  input {
+    font-size: 14px;
+    border: 1px solid $black-color !important;
+  }
+  div {
+    margin-bottom: 0px !important;
+  }
+  .title-record {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 15px 0px 0px 0px;
+  }
+
+  .col-form-diagnostics {
+    margin-top: 30px;
+    input {
+      margin-bottom: 10px;
+    }
+
+    select {
+      margin-bottom: 10px;
+    }
+  }
+
+  .form-group-button {
+    display: flex;
+    justify-content: space-around;
+
+    button {
+      padding: 5px 30px;
+    }
+  }
 }

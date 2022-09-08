@@ -8,7 +8,7 @@ import FormAnamnesis from "../FormAnamnesis";
 
 import "./index.scss";
 
-const TableAnamnesis = (props) => {
+const TableAnamnesis = () => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -36,7 +36,7 @@ const TableAnamnesis = (props) => {
           </tr>
         </tbody>
         <ModalGeneric show={show} onHide={handleClose} title="Anamnesis">
-          <FormAnamnesis />
+          <FormAnamnesis disabled={true} onHide={handleClose} />
         </ModalGeneric>
       </Table>
     </div>

@@ -4,6 +4,7 @@ import { Button } from "react-bootstrap";
 
 import TableAnamnesis from "../TableAnamnesis";
 import ModalGeneric from "../ModalGeneric";
+import FormAnamnesis from "../FormAnamnesis";
 
 import "./index.scss";
 
@@ -12,17 +13,16 @@ const TabAnamnesis = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
   return (
     <div className="container-tab-anamnesis">
       <TableAnamnesis />
       <Button className="button-new-anamnesis" onClick={handleShow}>
         Nueva
       </Button>
-      <ModalGeneric
-        show={show}
-        onHide={handleClose}
-        title="Nueva Anamnesis"
-      ></ModalGeneric>
+      <ModalGeneric show={show} onHide={handleClose} title="Nueva Anamnesis">
+        <FormAnamnesis disabled={false} onHide={handleClose} />
+      </ModalGeneric>
     </div>
   );
 };
